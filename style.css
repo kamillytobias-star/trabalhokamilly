@@ -1,39 +1,130 @@
-{
-margin: 0;
-padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-cabecalho {
-padding: 15px 25px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-  background-color: ;
-}
-.cartao {
-width: 260px;
-height: 200px;
-}
-.cartao-imagem {
-width: 100%;
-}
+
 body {
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-main {
-flex: 1;
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #1e3a5f;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
+
+.cabecalho h1 {
+  font-size: 1.6rem;
+}
+
+.cabecalho nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .cabecalho-link {
-color: #fff;
-text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
 }
-h1 {
-color: #fff;
+
+.cabecalho-link:hover {
+  text-decoration: underline;
 }
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.secao {
+  background-color: white;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.secao h2 {
+  color: #1e3a5f;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.secao p {
+  margin-bottom: 12px;
+}
+
+.secao ol,
+.secao ul {
+  padding-left: 25px;
+}
+
+.secao li {
+  margin-bottom: 10px;
+}
+
+/* Destaque */
+.destaque {
+  background-color: #e8f0fe;
+  border-left: 6px solid #1e3a5f;
+}
+
+/* Cards de linguagens */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #f8fafc;
+  border: 1px solid #dce3eb;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card h3 {
+  color: #1e3a5f;
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
 footer {
-background-color:
-#7e3e1c;
-padding: 15px 25px;
-color: #fff;
+  background-color: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 18px 20px;
+  font-size: 0.95rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .cabecalho {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cabecalho nav {
+    justify-content: center;
+  }
 }
