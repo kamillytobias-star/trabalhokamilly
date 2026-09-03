@@ -38,38 +38,38 @@ body {
 
 main {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 40px 20px;
 }
 
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .cartao {
-  width: 100%;
-  max-width: 420px;
   background-color: #fff;
   border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
 }
 
 .cartao h2 {
-  padding: 18px 15px 10px;
-  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-size: 1.35rem;
   color: #1e3a5f;
 }
 
-.cartao-imagem {
-  width: 100%;
-  height: auto;
-  display: block;
+.cartao p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 12px;
 }
 
-.cartao p {
-  padding: 18px 20px 25px;
-  line-height: 1.5;
-  font-size: 1rem;
+.cartao p:last-child {
+  margin-bottom: 0;
 }
 
 footer {
